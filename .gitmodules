@@ -1,0 +1,3 @@
+[submodule "jian-blog/themes/even"]
+	path = jian-blog/themes/even
+	url = https://github.com/olOwOlo/hugo-theme-even
