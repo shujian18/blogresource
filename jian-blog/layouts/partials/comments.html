@@ -35,6 +35,11 @@
     {{ partial "comments/valine.html" . }}
   {{- end }}
 
+    <!-- valine -->
+    {{- if .Site.Params.waline.enable -}}
+    {{ partial "comments/waline.html" . }}
+  {{- end }}
+
   <!-- Remark42 -->
   {{- if .Site.Params.remark42Url -}}
   <div id="remark42"></div>

@@ -1,0 +1,25 @@
+<head>
+  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+</head>
+<body>
+  <div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: '{{ .Site.Params.waline.serverURL }}',
+      emoji: [
+          'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+          'https://unpkg.com/@waline/emojis@1.2.0/tieba',
+      ],
+      placeholder: '{{ .Site.Params.waline.Placeholder }}',
+      avatar: '{{ .Site.Params.waline.Avatar }}',
+      meta: {{ .Site.Params.waline.Meta }},
+      pageSize: {{ .Site.Params.waline.PageSize }},
+      lang: '{{ .Site.Params.waline.Lang }}',
+      highlight: {{ .Site.Params.waline.Highlight }},
+      avatarCDN: '{{ .Site.Params.waline.AvatarCDN }}',
+      requiredFields: {{ .Site.Params.waline.RequiredFields }}
+    });
+  </script>
+</body>
+
